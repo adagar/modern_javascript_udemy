@@ -1,5 +1,6 @@
 class User {
   constructor(username, email) {
+    //setup properties
     this.username = username;
     this.email = email;
     this.score = 0;
@@ -15,6 +16,7 @@ class User {
   incScore() {
     this.score += 1;
     console.log(`${this.username} has a score of ${this.score}`);
+    //return something so that you can chain this
     return this;
   }
 }
