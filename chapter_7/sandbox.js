@@ -23,8 +23,10 @@ const testUserName = () => {
     if(usernamePattern.test(username)) {
         //feedback good info
         feedback.textContent = 'That username is valid!';
+        form.username.setAttribute('class', 'success');
     } else {
         // feedback bad info
         feedback.textContent = "Username must only containers letters and numbers, without 6-12 characters";
+        form.username.setAttribute('class', 'error');
     }
 }
